@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Decodificador de mensagens</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <header>
+      <img src="./assets/logoAlura.svg" alt="Logo da Alura" class="logoAlura" />
+    </header>
+
+    <main>
+      <section class="apresentacao_entrada">
+        <textarea
+          class="entrada"
+          cols="41"
+          rows="4"
+          placeholder="Digite seu texto"
+        ></textarea>
+
+        <div class="informacao_botoes">
+          <div class="informacao">
+            <img src="./assets/iconeInformacao.svg" alt="Icone de Informação" />
+            <h6>Apenas letras minúsculas e sem acento.</h6>
+          </div>
+          <div class="botoes">
+            <button onclick="btnCriptografar()" class="btn_encriptar">Criptografar</button>
+            <button onclick="btnDescriptografar()" class="btn_desencriptar">Descriptografar</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="historico_mensagens">
+        <div class="historico_mensagens_div">
+          <img
+            src="./assets/ilustracaoHistoricoMensagens.svg"
+            alt="Boneco com a lupa 
+                    procurando algo"
+            class="ilustracao"
+          />
+          <h2 class="mensagens_titulo">Nenhuma mensagem encontrada</h2>
+          <p class="mensagens_texto">
+            Digite um texto que você deseja criptografar ou descriptografar.
+          </p>
+        </div>
+        <button onclick="copiarMensagem()" class="btn_copiar" hidden>Copiar</button>
+      </section>
+    </main>
+    <footer class="rodape">
+      <div class="copyright">
+        <p>Challenge ONE + Alura - Encriptador/Desencriptador de Texto</p>
+        <p>Desenvolvido por Frederico Paiva</p>
+        <p>Icons by <a href="https://icons8.com.br/">Icons8</a></p>
+      </div>
+      <div class="redes_sociais">
+        <a href="https://github.com/fredpaiva42"
+          ><img src="./assets/icons8-github.svg" alt="Link para meu Github"
+        /></a>
+        <a href="https://www.linkedin.com/in/fredericogpaiva/"
+          ><img src="./assets/icons8-linkedin.svg" alt="Link para meu LinkedIn"
+        /></a>
+      </div>
+    </footer>
+    <script src="./scripts/app.js" defer></script>
+  </body>
+</html>

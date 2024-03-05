@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root {
+    /* Cores */
+    --dark-blue-100: #609ED4;
+    --dark-blue-200: #356EA9;
+    --dark-blue-300: #0A3871;
+    --dark-blue-400: #072B61;
+    --dark-blue-500: #052051;
+    --light-blue-100: #F3F5FC;
+    --light-blue-200: #EFF1FA;
+    --light-blue-300: #E9ECF8;
+    --light-blue-400: #AAB2D5;
+    --light-blue-500: #757FB2;
+    --gray-0: #D8DFE8;
+    --gray-100: #CED4DA;
+    --gray-200: #ADB5BD;
+    --gray-300: #868E96;
+    --gray-400: #495057;
+    --gray-500: #343A40;
+
+    /* Fontes */
+    --main-font: "Inter", sans-serif;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--light-blue-100);
+    font-family: var(--main-font);
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.logoAlura {
+    margin-left: 5%;
+    padding-top: 40px;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2.5%;
+}
+
+.apresentacao_entrada {
+    display: flex;
+    flex-direction: column;
+    margin-left: 15%;
+    justify-content: space-between;
+    gap: 150px;
+}
+
+.entrada {
+    border: none;
+    background-color: var(--light-blue-100);
+    color: var(--dark-blue-300);
+    margin-top: 5%;
+    outline: none;
+    font-size: 2rem;
+    resize: none;
+}
+
+.entrada::placeholder { color: var(--dark-blue-300);}
+
+.botoes{
+    display: flex;
+    width: 100%;
+    gap: 24px;
+}
+
+.informacao_botoes {
+    display: flex;
+    flex-direction: column;
+    gap: 16px
+}
+.informacao {
+    display: flex;
+    gap: 8px;
+    font-size: 1rem;
+    color: var(--gray-400);
+}
+
+.informacao h6 {
+    opacity: 80%;
+}
+
+.btn_encriptar {
+    background-color: var(--dark-blue-300);
+    border: 1px solid var(--dark-blue-300);
+    border-radius: 24px;
+    padding: 24px;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    width:50%;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, .08);
+}
+
+.btn_encriptar:hover{
+    background-color: var(--dark-blue-200);
+}
+
+.btn_desencriptar{
+    background-color: var(--gray-0);
+    border: 1px solid var(--dark-blue-300);
+    border-radius: 24px;
+    padding: 24px;
+    color: var(--dark-blue-300);
+    font-size: 1rem;
+    cursor: pointer;
+    width: 50%;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, .08);
+}
+
+.btn_desencriptar:hover{
+    background-color: var(--light-blue-200);
+}
+
+.historico_mensagens{
+    background-color: white;
+    border-radius: 32px;
+    min-width: 25%;
+    max-width: 30%;
+    margin-left: 5%;
+    margin-right: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.historico_mensagens_div {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 16px;
+    margin: 15%;
+}
+
+.ilustracao {
+    align-items: center;
+}
+
+.mensagens_titulo{
+    color: var(--gray-500);
+    font-weight: 700;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.mensagens_texto{
+    color: var(--gray-400);
+    font-size: 1rem;
+    margin-bottom: 10%;
+    text-align: center;
+}
+
+.mensagem {
+    background: white;
+    border: none;
+    color: var(--gray-400);
+    font-size: 1.5rem;
+    outline: none;
+    resize: none;
+}
+
+.btn_copiar {
+    background-color: white;
+    border: 1px solid var(--dark-blue-300);
+    border-radius: 24px;
+    padding: 24px;
+    gap: 8px;
+    font-size: 1rem;
+    color: var(--dark-blue-300);
+    cursor: pointer;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 10%;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, .08);
+}
+
+.btn_copiar:hover{
+    background-color: var(--light-blue-200);
+}
+
+.rodape {
+    background-color: var(--dark-blue-300);
+    padding: 14px;
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+
+.copyright {
+    color: var(--light-blue-200);
+    font-size: 0.8rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+.copyright a{
+    color: var(--light-blue-200);
+}
+
+.redes_sociais{
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+/* Tablet */
+@media (max-width: 1320px){
+
+    .logoAlura{
+        padding-top: 40px;
+        margin-left: 1%;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        gap: 64px
+    }
+
+    .apresentacao_entrada{
+        margin-left: 45px;
+        margin-right: 45px;
+    }
+
+    .historico_mensagens{
+        display: flex;
+    }
+
+    .historico_mensagens .ilustracao{
+        width: 0%;
+    }
+}
