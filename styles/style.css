@@ -223,7 +223,7 @@ main {
     main {
         display: flex;
         flex-direction: column;
-        gap: 64px
+        gap: 54px
     }
 
     .apresentacao_entrada{
@@ -233,6 +233,15 @@ main {
 
     .historico_mensagens{
         display: flex;
+        margin-left: 10%;
+        margin-right: 10%;
+        padding-left: 200px;
+        padding-right: 200px;
+    }
+
+    .historico_mensagens_div{
+        margin: 0;
+        text-align: right;
     }
 
     .historico_mensagens .ilustracao{
